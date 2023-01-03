@@ -13,7 +13,7 @@
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "typecheck": "tsc --noEmit",
-    "deploy": "gatsby build && gh-pages -d public -b main"
+    "deploy": "gatsby build && gh-pages -d public -b gatsby"
   },
   "dependencies": {
     "@emotion/react": "^11.10.5",
