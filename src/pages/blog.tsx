@@ -1,20 +1,20 @@
-import React from "react"
-import { Link, graphql } from "gatsby"
-import { css } from "@emotion/react"
-import styled from "@emotion/styled"
-import Layout from "../components/layout"
-import Seo from "../components/seo"
+import React from "react";
+import { Link, graphql } from "gatsby";
+import { css } from "@emotion/react";
+import styled from "@emotion/styled";
+import Layout from "../components/layout";
+import Seo from "../components/seo";
 
 const Content = styled.div`
   margin: 0 auto;
   max-width: 860px;
   padding: 1.45rem 1.0875rem;
-`
+`;
 
 const ArticleDate = styled.h5`
   display: inline;
   color: #606060;
-`
+`;
 
 const MarkerHeader = styled.h3`
   display: inline;
@@ -25,12 +25,12 @@ const MarkerHeader = styled.h3`
     rgba(255, 250, 150, 0.8) 100%,
     rgba(255, 250, 150, 0.25)
   );
-`
+`;
 
 const ReadingTime = styled.h5`
   display: inline;
   color: #606060;
-`
+`;
 
 const IndexPage = ({ data }: any) => {
   return (
@@ -39,11 +39,11 @@ const IndexPage = ({ data }: any) => {
       <Content>
         <h1>Blog</h1>
         {data.allMarkdownRemark.edges
-          .filter(({ node }: any) => {
-            const rawDate = node.frontmatter.rawDate
-            const date = new Date(rawDate)
-            return date < new Date()
-          })
+          // .filter(({ node }: any) => {
+          //   const rawDate = node.frontmatter.rawDate
+          //   const date = new Date(rawDate)
+          //   return date < new Date()
+          // })
           .map(({ node }: any) => (
             <div key={node.id}>
               <Link
@@ -64,10 +64,10 @@ const IndexPage = ({ data }: any) => {
           ))}
       </Content>
     </Layout>
-  )
-}
+  );
+};
 
-export default IndexPage
+export default IndexPage;
 
 export const query = graphql`
   query {
@@ -99,4 +99,4 @@ export const query = graphql`
       }
     }
   }
-`
+`;
