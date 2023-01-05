@@ -1,0 +1,26 @@
+{
+  "formatter": {
+    "indentStyle": "space",
+    "ignore": [
+      "./node_modules/**/*.*",
+      "./.yarn/**/*.*",
+      "./dist/**/*.*"
+    ]
+  },
+  "linter": {
+    "rules": {
+      "recommended": true,
+      "suspicious": {
+        "noExplicitAny": "off"
+      },
+      "a11y": {
+        "useKeyWithClickEvents": "off"
+      }
+    }
+  },
+  "javascript": {
+    "formatter": {
+      "quoteProperties": "preserve"
+    }
+  }
+}
