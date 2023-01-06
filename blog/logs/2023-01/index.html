@@ -7,41 +7,54 @@
     rgba(255, 250, 150, 0.15),
     rgba(255, 250, 150, 0.8) 100%,
     rgba(255, 250, 150, 0.25)
-  );}</style><h1 class="css-1s2b5hf ehdjrxo2">This is such a long headline and i dont know what to write so i keep continiung</h1><style data-emotion="css 14yqsu0">.css-14yqsu0{margin-top:10px;color:#606060;}</style><h3 class="css-14yqsu0 ehdjrxo1">17 March, 2019<!-- --> - <!-- -->1<!-- --> min</h3><style data-emotion="css 1eksm6m">.css-1eksm6m a{-webkit-text-decoration:none;text-decoration:none;position:relative;background-image:linear-gradient(
+  );}</style><h1 class="css-1s2b5hf ehdjrxo2">2023-01 Monthly Log</h1><style data-emotion="css 14yqsu0">.css-14yqsu0{margin-top:10px;color:#606060;}</style><h3 class="css-14yqsu0 ehdjrxo1">06 January, 2023<!-- --> - <!-- -->1<!-- --> min</h3><style data-emotion="css 1eksm6m">.css-1eksm6m a{-webkit-text-decoration:none;text-decoration:none;position:relative;background-image:linear-gradient(
       rgba(255, 250, 150, 0.8),
       rgba(255, 250, 150, 0.8)
-    );background-repeat:no-repeat;-webkit-background-size:100% 0.2em;background-size:100% 0.2em;-webkit-background-position:0 88%;background-position:0 88%;-webkit-transition:background-size 0.25s ease-in;transition:background-size 0.25s ease-in;}.css-1eksm6m a:hover{-webkit-background-size:100% 88%;background-size:100% 88%;}.css-1eksm6m a>code:hover{-webkit-text-decoration:underline;text-decoration:underline;}</style><div class="css-1eksm6m ehdjrxo0"><h1>H1</h1>
-<h2>H2</h2>
-<h3>H3</h3>
-<h4>H4</h4>
-<h5>H5</h5>
-<h6>H6</h6>
-<p>Paragraph</p>
-<hr>
-<blockquote>
-<p>This is a quote</p>
-</blockquote>
-<hr>
-<p><a href="example.com">Example.com</a></p>
-<hr>
-<p><code class="language-text">const foo = bar</code></p>
-<div class="gatsby-highlight" data-language="javascript"><pre style="counter-reset: linenumber NaN" class="language-javascript line-numbers"><code class="language-javascript"><span class="token keyword">const</span> foo <span class="token operator">=</span> bar
-console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>foo<span class="token punctuation">)</span><span class="token punctuation">;</span></code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span><span></span></span></pre></div>
-<hr>
-<table>
-<thead>
-<tr>
-<th>Hello</th>
-<th> World</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Foo</td>
-<td>Bar</td>
-</tr>
-</tbody>
-</table></div></div></main><style data-emotion="css zl1inp">.css-zl1inp{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;-webkit-justify-content:center;justify-content:center;}</style><footer class="css-zl1inp e1forcmc0"><p>© <!-- -->2023<!-- -->, Built with<!-- --> </p><style data-emotion="css 1qkltea">.css-1qkltea{margin-left:5px;}</style><a href="https://www.gatsbyjs.org" class="css-1qkltea e1forcmc1">Gatsby</a></footer></div></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script async="" src="https://www.googletagmanager.com/gtag/js?id=G-1F9YPQBF1N"></script><script>
+    );background-repeat:no-repeat;-webkit-background-size:100% 0.2em;background-size:100% 0.2em;-webkit-background-position:0 88%;background-position:0 88%;-webkit-transition:background-size 0.25s ease-in;transition:background-size 0.25s ease-in;}.css-1eksm6m a:hover{-webkit-background-size:100% 88%;background-size:100% 88%;}.css-1eksm6m a>code:hover{-webkit-text-decoration:underline;text-decoration:underline;}</style><div class="css-1eksm6m ehdjrxo0"><h2>23-01-06</h2>
+<ul>
+<li>react ts cheatsheet <a href="https://react-typescript-cheatsheet.netlify.app/docs/basic/getting-started/basic_type_example">https://react-typescript-cheatsheet.netlify.app/docs/basic/getting-started/basic_type_example</a></li>
+<li>nextjs, styled-comp <a href="https://blog.logrocket.com/theming-in-next-js-with-styled-components-and-usedarkmode/">https://blog.logrocket.com/theming-in-next-js-with-styled-components-and-usedarkmode/</a></li>
+<li>vite 빌드 시 type들이 포함되지 않는 경우에 대한 해결</li>
+</ul>
+<p><code class="language-text">tsconfig.json</code>에서 오류가 생긴 것이 원인이었다.</p>
+<div class="gatsby-highlight" data-language="json"><pre style="counter-reset: linenumber NaN" class="language-json line-numbers"><code class="language-json"><span class="token comment">//tsconfig.json</span>
+<span class="token punctuation">{</span>
+  ...<span class="token punctuation">,</span>
+  <span class="token property">"include"</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">"src"</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token comment">// lerna를 적용하면서 이 부분이 오염됐었다.</span>
+  ...<span class="token punctuation">,</span>
+<span class="token punctuation">}</span></code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span><span></span><span></span><span></span><span></span><span></span></span></pre></div>
+<p><code class="language-text">include</code> 옵션은 TS가 참고할 소스가 어디에있는지를 가리키기 위함이므로 중요한 값이다. <a href="https://www.typescriptlang.org/tsconfig#include">https://www.typescriptlang.org/tsconfig#include</a></p>
+<ul>
+<li>JS Object Copy</li>
+</ul>
+<p><a href="https://code.tutsplus.com/articles/the-best-way-to-deep-copy-an-object-in-javascript--cms-39655">https://code.tutsplus.com/articles/the-best-way-to-deep-copy-an-object-in-javascript--cms-39655</a></p>
+<p>JS의 Object copy method에는 5가지 정도가 있다.</p>
+<ol>
+<li><code class="language-text">=</code>: 단순 주소 값 복사. 값에 대한 네임을 하나 추가한다고 볼 수 있다.</li>
+<li><code class="language-text">JSON.stringify, JSON.parse</code>: deep copy, 하지만 function 에 대한 복사 안됨</li>
+<li><code class="language-text">Object.assign</code>: deep copy, 하지만 1st level만 복사</li>
+<li><code class="language-text">...</code>(spread operation): 3과 동일</li>
+<li>기타 라이브러리: lodash등. 라이브러리 지원에 따라 다르며 <code class="language-text">_.deepCopy</code>를 사용하면 deep copy를 할 수 있다.</li>
+</ol>
+<ul>
+<li>zeplin blog에 올라온 darkmode에 관한 좋은 글 <a href="https://blog.zeplin.io/dark-mode-color-palette">https://blog.zeplin.io/dark-mode-color-palette</a>
+<ul>
+<li><a href="https://www.designsystems.com/open-design-systems/">https://www.designsystems.com/open-design-systems/</a></li>
+</ul>
+</li>
+</ul>
+<h2>23-01-05(목)</h2>
+<ul>
+<li>material theme builder: <a href="https://m3.material.io/theme-builder#/custom">https://m3.material.io/theme-builder#/custom</a>
+<ul>
+<li><a href="https://www.figma.com/community/plugin/1034969338659738588/Material-Theme-Builder">https://www.figma.com/community/plugin/1034969338659738588/Material-Theme-Builder</a></li>
+</ul>
+</li>
+<li>material color system: <a href="https://m2.material.io/design/color/the-color-system.html#color-usage-and-palettes">https://m2.material.io/design/color/the-color-system.html#color-usage-and-palettes</a></li>
+<li>lerna: <a href="https://lerna.js.org/docs/getting-started">https://lerna.js.org/docs/getting-started</a></li>
+<li>darkmode using emotion: <a href="https://levelup.gitconnected.com/adding-dark-mode-to-your-react-app-with-emotion-css-in-js-fc5c0f926838">https://levelup.gitconnected.com/adding-dark-mode-to-your-react-app-with-emotion-css-in-js-fc5c0f926838</a></li>
+<li>css challenge skewed highlight: <a href="https://pepelsbey.dev/articles/skewed-highlight/">https://pepelsbey.dev/articles/skewed-highlight/</a></li>
+</ul></div></div></main><style data-emotion="css zl1inp">.css-zl1inp{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;-webkit-justify-content:center;justify-content:center;}</style><footer class="css-zl1inp e1forcmc0"><p>© <!-- -->2023<!-- -->, Built with<!-- --> </p><style data-emotion="css 1qkltea">.css-1qkltea{margin-left:5px;}</style><a href="https://www.gatsbyjs.org" class="css-1qkltea e1forcmc1">Gatsby</a></footer></div></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script async="" src="https://www.googletagmanager.com/gtag/js?id=G-1F9YPQBF1N"></script><script>
       
       
       if(true) {
@@ -51,7 +64,7 @@ console<span class="token punctuation">.</span><span class="token function">log<
 
         gtag('config', 'G-1F9YPQBF1N', {"send_page_view":false});
       }
-      </script><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/blog/example-title/";/*]]>*/</script><!-- slice-start id="_gatsby-scripts-1" -->
+      </script><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/blog/logs/2023-01/";/*]]>*/</script><!-- slice-start id="_gatsby-scripts-1" -->
           <script
             id="gatsby-chunk-mapping"
           >
