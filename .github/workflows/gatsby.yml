@@ -15,6 +15,11 @@ jobs:
         run: |
           git config --global user.email "kyusuen@gmail.com"
           git config --global user.name "sundicide"
+      - name: Setup Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: "18"
+          cache: ${{ steps.detect-package-manager.outputs.manager }}
       - name: Checkout
         uses: actions/checkout@v2
       - name: Install dependencies
