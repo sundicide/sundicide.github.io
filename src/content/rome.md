@@ -1,5 +1,5 @@
 ---
-title: "Romez"
+title: "Rome settings"
 date: "2023-01-05"
 draft: false
 path: "/blog/dev/rome/"
