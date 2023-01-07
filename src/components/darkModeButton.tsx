@@ -6,6 +6,8 @@ import { Button, useColorMode } from "theme-ui";
 export default function DarkModeButton(props: any) {
   const [mode, setMode] = useColorMode();
 
+  useEffect(() => {}, [mode]);
+
   const isDarkMode = mode === "dark";
   const StyledButton = styled.button({
     cursor: "pointer",
