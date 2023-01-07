@@ -7,7 +7,7 @@ export default function DarkModeButton(props: any) {
 
   useEffect(() => {}, [mode]);
 
-  const isDarkMode = () => mode === "dark";
+  const isDarkMode = mode === "dark";
   const StyledButton = styled.button({
     cursor: "pointer",
     position: "absolute",
@@ -28,12 +28,12 @@ export default function DarkModeButton(props: any) {
     <StyledButton
       css={{ backgroundColor: "transparent", padding: 5 }}
       onClick={(e) => {
-        const next = isDarkMode() ? "light" : "dark";
+        const next = isDarkMode ? "light" : "dark";
         setMode(next);
       }}
       {...props}
     >
-      {isDarkMode() ? <Light /> : <Dark />}
+      {isDarkMode ? <Light /> : <Dark />}
     </StyledButton>
   );
 }

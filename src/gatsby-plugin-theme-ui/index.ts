@@ -1,4 +1,7 @@
 export default {
+  config: {
+    initialColorModeName: "light",
+  },
   cards: {
     primary: {
       padding: 2,
