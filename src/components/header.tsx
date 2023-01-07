@@ -79,7 +79,7 @@ const Header = ({ siteTitle }: any) => (
         <HomeLink to="/">{siteTitle}</HomeLink>
         <NavLink to="/blog">Blog</NavLink>
         <GitHubLink href="https://github.com/sundicide">GitHub</GitHubLink>
-        <DarkModeButton css={{ marginLeft: 15 }} />
+        {/* <DarkModeButton css={{ marginLeft: 15 }} /> */}
       </p>
     </Content>
   </SiteHeader>
