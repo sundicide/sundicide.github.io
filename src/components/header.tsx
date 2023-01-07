@@ -7,14 +7,16 @@ const Content = styled.div`
   max-width: 860px;
   padding: 1rem 1.0875rem;
   font-size: 1.2rem;
+  color: ${(props) => props.theme.colors.onBackground};
 `;
 
 const NavLink = styled(Link)`
-  color: black;
   margin-left: 15px;
+  line-height: 25px;
   text-decoration: none;
   display: inline-block;
   position: relative;
+  color: ${(props) => props.theme.colors.onBackground};
 
   ::after {
     content: "";
@@ -24,7 +26,7 @@ const NavLink = styled(Link)`
     height: 2px;
     bottom: 0;
     left: 0;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: ${(props) => props.theme.colors.onBackground};
     transform-origin: bottom right;
     transition: transform 0.4s cubic-bezier(0.86, 0, 0.07, 1);
   }
@@ -36,8 +38,8 @@ const NavLink = styled(Link)`
 `;
 
 const GitHubLink = styled.a`
-  color: black;
   margin-left: 15px;
+  color: ${(props) => props.theme.colors.onBackground};
   text-decoration: none;
   display: inline-block;
   position: relative;
@@ -50,7 +52,7 @@ const GitHubLink = styled.a`
     height: 2px;
     bottom: 0;
     left: 0;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: ${(props) => props.theme.colors.onBackground};
     transform-origin: bottom right;
     transition: transform 0.4s cubic-bezier(0.86, 0, 0.07, 1);
   }
@@ -67,9 +69,12 @@ const HomeLink = styled(NavLink)`
 
 const SiteHeader = styled.header`
   background: transparent;
+  margin: 0 auto;
+  max-width: 860px;
   display: flex;
   align-content: center;
   justify-content: center;
+  position: relative;
 `;
 
 const Header = ({ siteTitle }: any) => (
@@ -79,7 +84,7 @@ const Header = ({ siteTitle }: any) => (
         <HomeLink to="/">Home</HomeLink>
         {/* <NavLink to="/blog">Blog</NavLink> */}
         <GitHubLink href="https://github.com/sundicide">GitHub</GitHubLink>
-        {/* <DarkModeButton css={{ marginLeft: 15 }} /> */}
+        <DarkModeButton />
       </p>
     </Content>
   </SiteHeader>

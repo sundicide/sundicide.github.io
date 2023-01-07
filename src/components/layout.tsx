@@ -31,6 +31,10 @@ type LayoutProps = {
   children: JSX.Element[] | JSX.Element;
 };
 
+const Wrapper = styled.main(props => ({
+  backgroundColor: props.theme.colors.background,
+}))
+
 const Layout = ({ children }: LayoutProps) => (
   <StaticQuery
     query={graphql`
@@ -43,7 +47,7 @@ const Layout = ({ children }: LayoutProps) => (
       }
     `}
     render={(data) => (
-      <>
+      <Wrapper>
         <Header siteTitle={data.site.siteMetadata.title} />
         <Content>
           <main>{children}</main>
@@ -61,7 +65,7 @@ const Layout = ({ children }: LayoutProps) => (
             <a href="https://www.gatsbyjs.org">Gatsby</a>
           </Footer>
         </Content>
-      </>
+      </Wrapper>
     )}
   />
 );

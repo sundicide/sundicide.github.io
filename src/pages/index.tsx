@@ -1,9 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link, graphql } from "gatsby";
 import { css } from "@emotion/react";
 import styled from "@emotion/styled";
 import Layout from "../components/layout";
 import Seo from "../components/seo";
+import { Card } from "theme-ui";
+import BlogCard from "../components/BlogCard";
 
 const Content = styled.div`
   margin: 0 auto;
@@ -11,33 +13,16 @@ const Content = styled.div`
   padding: 1.45rem 1.0875rem;
 `;
 
-const ArticleDate = styled.h5`
-  display: inline;
-  color: #606060;
-`;
-
-const MarkerHeader = styled.h3`
-  display: inline;
-  border-radius: 1em 0 1em 0;
-  background-image: linear-gradient(
-    -100deg,
-    rgba(255, 250, 150, 0.15),
-    rgba(255, 250, 150, 0.8) 100%,
-    rgba(255, 250, 150, 0.25)
-  );
-`;
-
-const ReadingTime = styled.h5`
-  display: inline;
-  color: #606060;
-`;
+const Title = styled.h1((props) => ({
+  color: props.theme.colors.onBackground,
+}));
 
 const IndexPage = ({ data }: any) => {
   return (
     <Layout>
       <Seo title="Blog" />
       <Content>
-        <h1>Blog</h1>
+        <Title>Blog</Title>
         {data.allMarkdownRemark.edges
           // .filter(({ node }: any) => {
           //   const rawDate = node.frontmatter.rawDate
@@ -45,22 +30,7 @@ const IndexPage = ({ data }: any) => {
           //   return date < new Date()
           // })
           .map(({ node }: any) => (
-            <div key={node.id}>
-              <Link
-                to={node.frontmatter.path}
-                css={css`
-                  text-decoration: none;
-                  color: inherit;
-                `}
-              >
-                <MarkerHeader>{node.frontmatter.title}</MarkerHeader>
-              </Link>
-              <div>
-                <ArticleDate>{node.frontmatter.date}</ArticleDate>
-                <ReadingTime> - {node.timeToRead} min</ReadingTime>
-              </div>
-              <p>{node.excerpt}</p>
-            </div>
+            <BlogCard node={node} />
           ))}
       </Content>
     </Layout>

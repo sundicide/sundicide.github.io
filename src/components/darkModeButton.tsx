@@ -1,3 +1,4 @@
+import styled from "@emotion/styled";
 import { StaticImage } from "gatsby-plugin-image";
 import { useEffect, useState } from "react";
 import { Button, useColorMode } from "theme-ui";
@@ -6,24 +7,24 @@ export default function DarkModeButton(props: any) {
   const [mode, setMode] = useColorMode();
 
   const isDarkMode = mode === "dark";
+  const StyledButton = styled.button({
+    cursor: "pointer",
+    position: "absolute",
+    right: 0,
+    marginLeft: 15,
+    padding: 0,
+    height: 25,
+    trasnform: "translate(-100%, 0)",
+    border: "none",
+  });
   const Dark = () => (
-    <StaticImage
-      src="../images/dark-mode.png"
-      alt="color mode button"
-      width={25}
-      height={25}
-    />
+    <img src="/dark-mode.png" alt="color mode button" width={25} height={25} />
   );
   const Light = () => (
-    <StaticImage
-      src="../images/light-mode.png"
-      alt="color mode button"
-      width={25}
-      height={25}
-    />
+    <img src="/light-mode.png" alt="color mode button" width={25} height={25} />
   );
   return (
-    <Button
+    <StyledButton
       css={{ backgroundColor: "transparent", padding: 5 }}
       onClick={(e) => {
         const next = isDarkMode ? "light" : "dark";
@@ -32,6 +33,6 @@ export default function DarkModeButton(props: any) {
       {...props}
     >
       {isDarkMode ? <Dark /> : <Light />}
-    </Button>
+    </StyledButton>
   );
 }

@@ -13,13 +13,30 @@ export default {
     },
   },
   colors: {
+    cardBgColor: "#f3f3fb",
     text: "#333",
-    background: "#fff",
-    primary: "#6251A6",
+    background: "#fbfcff",
+    onBackground: "#191c1e", // 메인 텍스트 색
+    surface: "#fbfcff",
+    onSurface: "#191c1e",
+    outline: "#71787e",
+    surfaceVariant: "#dde3ea",
+    onSurfaceVariant: "#41484d",
+    primary: "#00668a",
+    primaryContainer: "#c4e7ff",
     secondary: "#605B71",
     modes: {
       dark: {
+        cardBgColor: "#1e1f24",
+        background: "#191c1e",
+        onBackground: "#e1e2e5", // 메인 텍스트 색
+        surface: "#191c1e",
+        onSurface: "#e1e2e5",
+        outline: "#8b9297",
+        surfaceVariant: "#41484d",
+        onSurfaceVariant: "#c0c7cd",
         primary: "#000000",
+        primaryContainer: "#004c69",
       },
     },
   },
@@ -55,12 +72,12 @@ export default {
       text: "#fff",
       marginBottom: 33,
     },
-    a: {
-      color: "primary",
-      ":hover, :focus": {
-        color: "secondary",
-      },
-    },
+    // a: {
+    //   color: "primary",
+    //   ":hover, :focus": {
+    //     color: "secondary",
+    //   },
+    // },
     // more styles can be added as needed
   },
 };
