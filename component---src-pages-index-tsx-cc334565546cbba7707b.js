@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkpersonal_blog=self.webpackChunkpersonal_blog||[]).push([[691],{7200:function(e,n,t){t.r(n),t.d(n,{Head:function(){return a}});var l=t(6791),s=t(917);const o={color:"#232129",padding:96,fontFamily:"-apple-system, Roboto, sans-serif, serif"};n.default=()=>(0,s.tZ)(l.Z,null,(0,s.tZ)("main",{style:o},"Hi"));const a=()=>(0,s.tZ)("title",null,"Home Page")}}]);
+//# sourceMappingURL=component---src-pages-index-tsx-cc334565546cbba7707b.js.map
