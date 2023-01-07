@@ -37,6 +37,8 @@ export default {
     surfaceTint: "#00668a",
     tertiary: "#615a7d",
     tertiaryHsl: "252deg 16% 42%",
+    tertiaryContainer: "#e6deff",
+    onTertiaryContainer: "#1d1736",
     outlineVariant: "#c0c7cd",
     modes: {
       dark: {
@@ -59,6 +61,8 @@ export default {
         surfaceTint: "#7cd0ff",
         tertiary: "#cac1e9",
         tertiaryHsl: "253deg 48% 84%",
+        tertiaryContainer: "#494264",
+        onTertiaryContainer: "#e6deff",
         outlineVariant: "#41484d",
       },
     },

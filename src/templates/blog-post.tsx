@@ -51,6 +51,13 @@ const MarkdownContent = styled.div`
   a > code:hover {
     text-decoration: underline;
   }
+
+  p > code[class*=language-],
+  li > code[class*=language-]
+  {
+    background: ${(props) => props.theme.colors.tertiaryContainer};
+    color: ${(props) => props.theme.colors.onTertiaryContainer};
+  }
 `;
 
 const Data = ({ data }: any) => {
