@@ -49,9 +49,9 @@ const config: GatsbyConfig = {
       __key: "pages",
     },
     {
-      resolve: `gatsby-source-filesystem`,
+      resolve: "gatsby-source-filesystem",
       options: {
-        name: `markdown-pages`,
+        name: "markdown-pages",
         path: `${__dirname}/src/content`,
       },
     },
