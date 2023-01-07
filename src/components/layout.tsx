@@ -5,31 +5,33 @@
  * See: https://www.gatsbyjs.org/docs/static-query/
  */
 
-import React from "react"
-import PropTypes from "prop-types"
-import { StaticQuery, graphql } from "gatsby"
-import styled from "@emotion/styled"
+import React from "react";
+import PropTypes from "prop-types";
+import { StaticQuery, graphql } from "gatsby";
+import styled from "@emotion/styled";
 
-import Header from "./header"
-import "./layout.css"
+import Header from "./header";
+import "./layout.css";
+import { StaticImage } from "gatsby-plugin-image";
 
 const Content = styled.div`
   margin: 0 auto;
   max-width: 860px;
   padding: 0 1.0875rem 1rem;
   padding-top: 0;
-`
-
-const GatsbyLink = styled.a`
-  margin-left: 5px;
-`
+`;
 
 const Footer = styled.footer`
   display: flex;
+  align-items: center;
   justify-content: center;
-`
+`;
 
-const Layout = ({ children }) => (
+type LayoutProps = {
+  children: JSX.Element[] | JSX.Element;
+};
+
+const Layout = ({ children }: LayoutProps) => (
   <StaticQuery
     query={graphql`
       query SiteTitleQuery {
@@ -40,26 +42,32 @@ const Layout = ({ children }) => (
         }
       }
     `}
-    render={data => (
+    render={(data) => (
       <>
         <Header siteTitle={data.site.siteMetadata.title} />
         <Content>
           <main>{children}</main>
           <Footer>
-            <p>
-            © {new Date().getFullYear()}, Built with
-            {` `}
-            </p>
-            <GatsbyLink href="https://www.gatsbyjs.org">Gatsby</GatsbyLink>
+            <p>© {new Date().getFullYear()}, Built with </p>
+            <StaticImage
+              src="../images/icon.png"
+              alt="Gatsby G Logo"
+              width={24}
+              height={24}
+              css={{
+                marginLeft: 5,
+              }}
+            />
+            <a href="https://www.gatsbyjs.org">Gatsby</a>
           </Footer>
         </Content>
       </>
     )}
   />
-)
+);
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
-}
+};
 
-export default Layout
+export default Layout;

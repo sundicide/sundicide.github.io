@@ -3,20 +3,25 @@ export default {
     primary: {
       padding: 2,
       borderRadius: 4,
-      boxShadow: '0 0 8px rgba(0, 0, 0, 0.125)',
+      boxShadow: "0 0 8px rgba(0, 0, 0, 0.125)",
     },
     compact: {
       padding: 1,
       borderRadius: 2,
-      border: '1px solid',
-      borderColor: 'muted',
+      border: "1px solid",
+      borderColor: "muted",
     },
   },
   colors: {
     text: "#333",
     background: "#fff",
-    primary: "#639",
-    secondary: "#ff6347",
+    primary: "#6251A6",
+    secondary: "#605B71",
+    modes: {
+      dark: {
+        primary: "#000000",
+      },
+    },
   },
   fonts: {
     body: "system-ui, sans-serif",
@@ -49,7 +54,6 @@ export default {
       marginTop: 0,
       text: "#fff",
       marginBottom: 33,
-
     },
     a: {
       color: "primary",
@@ -59,4 +63,4 @@ export default {
     },
     // more styles can be added as needed
   },
-}
+};
