@@ -6,7 +6,7 @@ path: "/blog/css-animation-transition/"
 ---
 
 ## 0. Preface
-본 내용은 [https://css-for-js.dev/](https://css-for-js.dev/){:target="_blank"}에서 배운 내용을 개인적으로 정리한 것입니다.
+본 내용은 [https://css-for-js.dev/](https://css-for-js.dev/)에서 배운 내용을 개인적으로 정리한 것입니다.
 
 기본적인 내용은 제외하고 강의를 들으면서 공유하고 싶었던 부분만 담으려 합니다.
 그러므로 Animation에 대해 익숙하지 않으신분들은 내용에 이해가 어려울 수 도 있다는 점 미리 알려 드립니다.

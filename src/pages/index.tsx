@@ -1,151 +1,102 @@
-import * as React from "react";
-import type { HeadFC, PageProps } from "gatsby";
-import { Button, Card, Link, Text } from "theme-ui";
+import React from "react";
+import { Link, graphql } from "gatsby";
+import { css } from "@emotion/react";
+import styled from "@emotion/styled";
 import Layout from "../components/layout";
+import Seo from "../components/seo";
 
-const pageStyles = {
-  color: "#232129",
-  padding: 96,
-  fontFamily: "-apple-system, Roboto, sans-serif, serif",
-};
-const headingStyles = {
-  marginTop: 0,
-  marginBottom: 64,
-  maxWidth: 320,
-};
-const headingAccentStyles = {
-  color: "#663399",
-};
-const paragraphStyles = {
-  marginBottom: 48,
-};
-const codeStyles = {
-  color: "#8A6534",
-  padding: 4,
-  backgroundColor: "#FFF4DB",
-  fontSize: "1.25rem",
-  borderRadius: 4,
-};
-const listStyles = {
-  marginBottom: 96,
-  paddingLeft: 0,
-};
-const doclistStyles = {
-  paddingLeft: 0,
-};
-const listItemStyles = {
-  fontWeight: 300,
-  fontSize: 24,
-  maxWidth: 560,
-  marginBottom: 30,
-};
+const Content = styled.div`
+  margin: 0 auto;
+  max-width: 860px;
+  padding: 1.45rem 1.0875rem;
+`;
 
-const linkStyle = {
-  color: "#8954A8",
-  fontWeight: "bold",
-  fontSize: 16,
-  verticalAlign: "5%",
-};
+const ArticleDate = styled.h5`
+  display: inline;
+  color: #606060;
+`;
 
-const docLinkStyle = {
-  ...linkStyle,
-  listStyleType: "none",
-  display: "inline-block",
-  marginBottom: 24,
-  marginRight: 12,
-};
+const MarkerHeader = styled.h3`
+  display: inline;
+  border-radius: 1em 0 1em 0;
+  background-image: linear-gradient(
+    -100deg,
+    rgba(255, 250, 150, 0.15),
+    rgba(255, 250, 150, 0.8) 100%,
+    rgba(255, 250, 150, 0.25)
+  );
+`;
 
-const descriptionStyle = {
-  color: "#232129",
-  fontSize: 14,
-  marginTop: 10,
-  marginBottom: 0,
-  lineHeight: 1.25,
-};
+const ReadingTime = styled.h5`
+  display: inline;
+  color: #606060;
+`;
 
-const docLinks = [
-  {
-    text: "TypeScript Documentation",
-    url: "https://www.gatsbyjs.com/docs/how-to/custom-configuration/typescript/",
-    color: "#8954A8",
-  },
-  {
-    text: "GraphQL Typegen Documentation",
-    url: "https://www.gatsbyjs.com/docs/how-to/local-development/graphql-typegen/",
-    color: "#8954A8",
-  },
-];
-
-const badgeStyle = {
-  color: "#fff",
-  backgroundColor: "#088413",
-  border: "1px solid #088413",
-  fontSize: 11,
-  fontWeight: "bold",
-  letterSpacing: 1,
-  borderRadius: 4,
-  padding: "4px 6px",
-  display: "inline-block",
-  position: "relative" as "relative",
-  top: -2,
-  marginLeft: 10,
-  lineHeight: 1,
-};
-
-const links = [
-  {
-    text: "Tutorial",
-    url: "https://www.gatsbyjs.com/docs/tutorial/",
-    description:
-      "A great place to get started if you're new to web development. Designed to guide you through setting up your first Gatsby site.",
-    color: "#E95800",
-  },
-  {
-    text: "How to Guides",
-    url: "https://www.gatsbyjs.com/docs/how-to/",
-    description:
-      "Practical step-by-step guides to help you achieve a specific goal. Most useful when you're trying to get something done.",
-    color: "#1099A8",
-  },
-  {
-    text: "Reference Guides",
-    url: "https://www.gatsbyjs.com/docs/reference/",
-    description:
-      "Nitty-gritty technical descriptions of how Gatsby works. Most useful when you need detailed information about Gatsby's APIs.",
-    color: "#BC027F",
-  },
-  {
-    text: "Conceptual Guides",
-    url: "https://www.gatsbyjs.com/docs/conceptual/",
-    description:
-      "Big-picture explanations of higher-level Gatsby concepts. Most useful for building understanding of a particular topic.",
-    color: "#0D96F2",
-  },
-  {
-    text: "Plugin Library",
-    url: "https://www.gatsbyjs.com/plugins",
-    description:
-      "Add functionality and customize your Gatsby site or app with thousands of plugins built by our amazing developer community.",
-    color: "#8EB814",
-  },
-  {
-    text: "Build and Host",
-    url: "https://www.gatsbyjs.com/cloud",
-    badge: true,
-    description:
-      "Now you’re ready to show the world! Give your Gatsby site superpowers: Build and host on Gatsby Cloud. Get started for free!",
-    color: "#663399",
-  },
-];
-
-const IndexPage: React.FC<PageProps> = () => {
+const IndexPage = ({ data }: any) => {
   return (
     <Layout>
-      <main style={pageStyles}>Hi</main>
+      <Seo title="Blog" />
+      <Content>
+        <h1>Blog</h1>
+        {data.allMarkdownRemark.edges
+          // .filter(({ node }: any) => {
+          //   const rawDate = node.frontmatter.rawDate
+          //   const date = new Date(rawDate)
+          //   return date < new Date()
+          // })
+          .map(({ node }: any) => (
+            <div key={node.id}>
+              <Link
+                to={node.frontmatter.path}
+                css={css`
+                  text-decoration: none;
+                  color: inherit;
+                `}
+              >
+                <MarkerHeader>{node.frontmatter.title}</MarkerHeader>
+              </Link>
+              <div>
+                <ArticleDate>{node.frontmatter.date}</ArticleDate>
+                <ReadingTime> - {node.timeToRead} min</ReadingTime>
+              </div>
+              <p>{node.excerpt}</p>
+            </div>
+          ))}
+      </Content>
     </Layout>
   );
 };
 
 export default IndexPage;
 
-export const Head: HeadFC = () => <title>Home Page</title>;
+export const query = graphql`
+  query {
+    site {
+      siteMetadata {
+        title
+      }
+    }
+    allMarkdownRemark(
+      sort: {frontmatter: {date: DESC}}
+      filter: { frontmatter: { draft: { eq: false } } }
+    ) {
+      totalCount
+      edges {
+        node {
+          id
+          frontmatter {
+            title
+            date(formatString: "DD MMMM, YYYY")
+            rawDate: date
+            path
+          }
+          fields {
+            slug
+          }
+          timeToRead
+          excerpt
+        }
+      }
+    }
+  }
+`;
