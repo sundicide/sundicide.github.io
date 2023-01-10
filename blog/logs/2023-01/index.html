@@ -10,7 +10,18 @@
   );}</style><h1 class="css-hf36r ehdjrxo2">2023-01 Monthly Log</h1><style data-emotion="css 14yqsu0">.css-14yqsu0{margin-top:10px;color:#606060;}</style><h3 class="css-14yqsu0 ehdjrxo1">06 January, 2023<!-- --> - <!-- -->1<!-- --> min</h3><style data-emotion="css r7gejo">.css-r7gejo{color:var(--theme-ui-colors-onBackground);}.css-r7gejo a{-webkit-text-decoration:none;text-decoration:none;position:relative;color:var(--theme-ui-colors-surfaceTint);background-image:linear-gradient(
       var(--theme-ui-colors-outlineVariant),
       var(--theme-ui-colors-outlineVariant)
-    );background-repeat:no-repeat;-webkit-background-size:100% 0.2em;background-size:100% 0.2em;-webkit-background-position:0 88%;background-position:0 88%;-webkit-transition:background-size 0.25s ease-in;transition:background-size 0.25s ease-in;}.css-r7gejo a:hover{-webkit-background-size:100% 88%;background-size:100% 88%;}.css-r7gejo a>code:hover{-webkit-text-decoration:underline;text-decoration:underline;}.css-r7gejo p>code[class*=language-],.css-r7gejo li>code[class*=language-]{background:var(--theme-ui-colors-tertiaryContainer);color:var(--theme-ui-colors-onTertiaryContainer);}</style><div class="css-r7gejo ehdjrxo0"><h2>23-01-09(월)</h2>
+    );background-repeat:no-repeat;-webkit-background-size:100% 0.2em;background-size:100% 0.2em;-webkit-background-position:0 88%;background-position:0 88%;-webkit-transition:background-size 0.25s ease-in;transition:background-size 0.25s ease-in;}.css-r7gejo a:hover{-webkit-background-size:100% 88%;background-size:100% 88%;}.css-r7gejo a>code:hover{-webkit-text-decoration:underline;text-decoration:underline;}.css-r7gejo p>code[class*=language-],.css-r7gejo li>code[class*=language-]{background:var(--theme-ui-colors-tertiaryContainer);color:var(--theme-ui-colors-onTertiaryContainer);}</style><div class="css-r7gejo ehdjrxo0"><h2>23-01-10(화)</h2>
+<ul>
+<li>recoil and atom <a href="https://recoiljs.org/">https://recoiljs.org/</a></li>
+<li>nextjs의 기본 css file로 인해 <code class="language-text">&lt;dialog></code>가 화면 왼쪽상단에 고정되는 현상 발생
+<div class="gatsby-highlight" data-language="css"><pre style="counter-reset: linenumber NaN" class="language-css line-numbers"><code class="language-css"><span class="token selector">*</span> <span class="token punctuation">{</span>
+  <span class="token property">box-sizing</span><span class="token punctuation">:</span> border-box<span class="token punctuation">;</span>
+  <span class="token property">padding</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
+  <span class="token property">margin</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
+<span class="token punctuation">}</span></code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span><span></span><span></span><span></span><span></span></span></pre></div>
+모든 항목에 <code class="language-text">padding: 0, margin: 0</code>을 넣어서 생기는 현상이다. 이를 제거해주면 된다.</li>
+</ul>
+<h2>23-01-09(월)</h2>
 <ul>
 <li>lerna
 root folder내 node_modules에 패키지가 설치되므로 내부에서는 별도의 패키지 install이 필요 없다</li>
