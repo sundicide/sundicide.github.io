@@ -1,7 +1,7 @@
 ---
 title: "Module 08 - CSS Animation"
 date: "2022-02-22"
-draft: false
+draft: true
 path: "/blog/css-animation-transition/"
 ---
 
