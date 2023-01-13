@@ -2,7 +2,7 @@
 title: "Ubuntu Machine Setting Guide"
 date: "2021-11-24"
 draft: false
-path: "/blog/snippets/ubuntu/"
+path: "/blog/snippets/ubuntu-machine-setting-guide/"
 ---
 
 Dell Server를 셋팅하면서 참조한 문서들 정리
