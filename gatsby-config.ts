@@ -130,6 +130,13 @@ const config: GatsbyConfig = {
               escapeEntities: {},
             },
           },
+          {
+            resolve: "@weknow/gatsby-remark-codepen",
+            options: {
+              theme: "dark",
+              height: 400,
+            },
+          },
         ],
       },
     },
