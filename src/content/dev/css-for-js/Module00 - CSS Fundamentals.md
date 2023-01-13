@@ -2,7 +2,7 @@
 title: "Module 00 - CSS Fundamentals"
 date: "2022-03-23"
 draft: false
-path: "/blog/study/css-for-js/module-09-css-little-big-details/"
+path: "/blog/study/css-for-js/module-00-css-fundamentals/"
 ---
 
 ## Media Queries
@@ -93,12 +93,7 @@ CSS에는 색상을 다양한 방식으로 표현할 수 있다.
 
 저자는 4번 HSL 방식을 선호한다. 예를 들어 `#abcdef` 라는 색상 값을 줬을 때 어떤 색상이 올지 알 수 있겠는가? 이를 RGB로 표현하면 `rgb(171, 205, 239)`가 된다. 이 역시 알기 힘들다. 그렇다면 HSL로 해보면 어떨까? `hsl(210, 68%, 80%)` 을 의미한다. 좀 더 알기 쉬워졌는가? 그렇지 않을 것이다. 이번엔 아래 예시를 봐보자.
 
-<p class="codepen" data-height="420" data-default-tab="html,result" data-slug-hash="oNpYwBz" data-user="sundicide" style="height: 420px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
-  <span>See the Pen <a href="https://codepen.io/sundicide/pen/oNpYwBz">
-  CSS - HSL Degrees</a> by sundicide (<a href="https://codepen.io/sundicide">@sundicide</a>)
-  on <a href="https://codepen.io">CodePen</a>.</span>
-</p>
-<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+https://codepen.io/sundicide/pen/oNpYwBz
 
 HSL은 위 예제에서 보듯이 앞에서부터 (hue, saturation, lightness)를 의미한다([MDN - hsl](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/hsl)).
 그래서 위의 그림을 익혀둔다면 보다 쉽게 색상을 예측할 수 있을 것이다. 또한 saturation과 lightness를 *hex*, *color* 에 비해 쉽게 변경할 수 있다는 장점도 있다.

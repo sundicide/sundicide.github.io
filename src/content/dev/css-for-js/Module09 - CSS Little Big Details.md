@@ -21,12 +21,7 @@ Blur는 Gaussian Filter를 적용해 주는데 H/W가속을 사용하더라도 �
 
 아래의 예는 wrapper에 overflow를 사용/미사용에 따른 차이를 보여준다.
 
-<p class="codepen" data-height="300" data-slug-hash="YzEJoaV" data-user="sundicide" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
-  <span>See the Pen <a href="https://codepen.io/sundicide/pen/YzEJoaV">
-  CSS - Filter</a> by sundicide (<a href="https://codepen.io/sundicide">@sundicide</a>)
-  on <a href="https://codepen.io">CodePen</a>.</span>
-</p>
-<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+https://codepen.io/sundicide/pen/YzEJoaV
 
 ### Backdrop Filter
 이 filter는 요소 뒤쪽에 filter를 추가해주는데 [MDN - backdrop filter](https://developer.mozilla.org/en-US/docs/Web/CSS/backdrop-filter)에서 확인 가능하다.
@@ -48,12 +43,7 @@ linear-gradients는 기본적으로 위에서 아래로 그려진다.
 
 또한 색깔을 넣는 대로 gradients를 만들어 주는데 균등하게 그려준다.
 
-<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="vYWwmKx" data-user="sundicide" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
-  <span>See the Pen <a href="https://codepen.io/sundicide/pen/vYWwmKx">
-  css-linear-gradients</a> by sundicide (<a href="https://codepen.io/sundicide">@sundicide</a>)
-  on <a href="https://codepen.io">CodePen</a>.</span>
-</p>
-<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+https://codepen.io/sundicide/pen/vYWwmKx
 
 위의 예시를 보면 색깔을 3개를 추가했기에 0은 red, 50은 white, 100은 blue로 잡은 뒤 gradients를 적용하는 것이다.
 
@@ -66,12 +56,7 @@ background: linear-gradient(red 0%, orange 10% 30%, yellow 50% 70%, green 90% 10
 
 마지막으로 `color-hint`가 있다. gradients 색깔 사이에는 `midpoint`가 존재하는데 이를 변경하는 것이다.
 
-<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="PoOvmRe" data-user="sundicide" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
-  <span>See the Pen <a href="https://codepen.io/sundicide/pen/PoOvmRe">
-  css-linear-gradients-color-hints</a> by sundicide (<a href="https://codepen.io/sundicide">@sundicide</a>)
-  on <a href="https://codepen.io">CodePen</a>.</span>
-</p>
-<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+https://codepen.io/sundicide/pen/PoOvmRe
 
 위의 예시를 보면 `Default` 박스는 color-hint를 설정하지 않아서 midpoint가 중앙에 위치하는 반면 아래의 `Color Hint Changed` 박스는 midpoint를 변경했기 때문에 해당 위치(20%)를 기준으로 gradients를 그리는 것을 알 수 있다.
 
@@ -87,12 +72,7 @@ background: linear-gradient(to right, red 0% 20%, blue); /* 2 */
 
 하지만 차이점이 존재하는데 optional parameter로 `position`을 지정할 수 있다는 것이다.
 
-<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="XWzwgWj" data-user="sundicide" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
-  <span>See the Pen <a href="https://codepen.io/sundicide/pen/XWzwgWj">
-  css-radial-gradients</a> by sundicide (<a href="https://codepen.io/sundicide">@sundicide</a>)
-  on <a href="https://codepen.io">CodePen</a>.</span>
-</p>
-<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+https://codepen.io/sundicide/pen/XWzwgWj
 
 ```css
 background: radial-gradient(50% 100%, gold, grey);
@@ -115,22 +95,12 @@ Conic Gradients의 예시를 보면 시작과 끝 색깔의 경계가 명확한 
 
 또한 color stop을 이용하면 pie chart 모양을 만들 수 있다.
 
-<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="yLpyNvX" data-user="sundicide" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
-  <span>See the Pen <a href="https://codepen.io/sundicide/pen/yLpyNvX">
-  CSS - Conic Gradients</a> by sundicide (<a href="https://codepen.io/sundicide">@sundicide</a>)
-  on <a href="https://codepen.io">CodePen</a>.</span>
-</p>
-<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+https://codepen.io/sundicide/pen/yLpyNvX
 
 linear에서는 angle을 받고 radial은 position을 받는데 conic은 둘 다 받는다.
 이를 이용하면 아래와 같은 효과도 가능하다.
 
-<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="qBpEdxQ" data-user="sundicide" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
-  <span>See the Pen <a href="https://codepen.io/sundicide/pen/qBpEdxQ">
-  Untitled</a> by sundicide (<a href="https://codepen.io/sundicide">@sundicide</a>)
-  on <a href="https://codepen.io">CodePen</a>.</span>
-</p>
-<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+https://codepen.io/sundicide/pen/qBpEdxQ
 
 위의 그림과 아래 그림의 차이를 알겠는가?
 위에서 angle과 position만 변경한 것인데 전혀 다른 효과처럼 보인다.
@@ -179,12 +149,7 @@ Gradients를 사용하면 midpoint를 자동으로 계산해준다.
 
 브라우저가 자동적으로 `rgb(100, 100, 0)`을 중간 값으로 잡을 것이다. 이 색깔은 어두워서 회색처럼 보이는데 이를 `Gradients Dead Zone` 이라고 한다.
 
-<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="wvpazJX" data-user="sundicide" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
-  <span>See the Pen <a href="https://codepen.io/sundicide/pen/wvpazJX">
-  CSS-Gradients_Dead_Zone</a> by sundicide (<a href="https://codepen.io/sundicide">@sundicide</a>)
-  on <a href="https://codepen.io">CodePen</a>.</span>
-</p>
-<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+https://codepen.io/sundicide/pen/wvpazJX
 
 위 예시에서 `Defaults` 항목은 위에서 얘기한 대로 시작과 끝 색상을 지정한 후 이외의 설정을 하지 않은 것이고 아래의 `revised`는 midpoint를 지정한 것이다.
 
