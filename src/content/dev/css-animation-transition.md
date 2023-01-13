@@ -33,12 +33,8 @@ CSS에서 Animation을 사용하는 방법은 2가지가 있다.
 
 Loop Animation이란 동일한 animation을 `반복`하는 것이다.
 아래의 예시는 애니메이션을 무한 반복 시킨 코드이다.
-<p class="codepen" data-height="300" data-slug-hash="MWOrMqP" data-user="sundicide" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
-  <span>See the Pen <a href="https://codepen.io/sundicide/pen/MWOrMqP">
-  CSS-Loop example</a> by sundicide (<a href="https://codepen.io/sundicide">@sundicide</a>)
-  on <a href="https://codepen.io">CodePen</a>.</span>
-</p>
-<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+
+https://codepen.io/sundicide/pen/MWOrMqP
 
 <br />
 
@@ -46,12 +42,8 @@ Loop Animation이란 동일한 animation을 `반복`하는 것이다.
 
 Multi-Step Animation이란 아래의 예와 같이 `여러 step`을 두어 animation을 실행하는 것이다.
 아래의 예시는 0%, 50%, 100% 3단계의 step으로 구성했다.
-<p class="codepen" data-height="300" data-slug-hash="YzEYoBW" data-user="sundicide" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
-  <span>See the Pen <a href="https://codepen.io/sundicide/pen/YzEYoBW">
-  CSS-Multi Step Animation</a> by sundicide (<a href="https://codepen.io/sundicide">@sundicide</a>)
-  on <a href="https://codepen.io">CodePen</a>.</span>
-</p>
-<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+
+https://codepen.io/sundicide/pen/YzEYoBW
 
 <br />
 
@@ -59,24 +51,15 @@ Multi-Step Animation이란 아래의 예와 같이 `여러 step`을 두어 anima
 animation을 `pause` 혹은 `resume`하는 것도 Animation으로만 가능하다.
 동적으로 animation 상태를 변경하기 위해 JS를 활용해야 한다.
 
-<p class="codepen" data-height="300" data-slug-hash="abVEeZO" data-user="sundicide" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
-  <span>See the Pen <a href="https://codepen.io/sundicide/pen/abVEeZO">
-  CSS-Pause Animation</a> by sundicide (<a href="https://codepen.io/sundicide">@sundicide</a>)
-  on <a href="https://codepen.io">CodePen</a>.</span>
-</p>
-<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+https://codepen.io/sundicide/pen/abVEeZO
 
 <br />
 
 ### 1-4. Page Loads / Components mounts 시 즉시 동작
 아래와 같이 없던 element가 `새로 생긴다`던가 `처음 페이지가 로드 됐을 시` 애니메이션을 적용해야할 경우 animation을 써야 한다.
 실제로는 Modal에서 쓰일 수 있다.
-<p class="codepen" data-height="300" data-slug-hash="ZEavgeg" data-user="sundicide" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
-  <span>See the Pen <a href="https://codepen.io/sundicide/pen/ZEavgeg">
-  CSS-MountAnimation</a> by sundicide (<a href="https://codepen.io/sundicide">@sundicide</a>)
-  on <a href="https://codepen.io">CodePen</a>.</span>
-</p>
-<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+
+https://codepen.io/sundicide/pen/ZEavgeg
 
 이외에 경우에는 transition을 써도 무방하다.
 
@@ -88,12 +71,7 @@ animation을 `pause` 혹은 `resume`하는 것도 Animation으로만 가능하�
 transition이 많이 쓰이는 곳은 어디일까?
 개인적으로는 `hover`시 동작하는 애니메이션들이라 생각한다.
 
-<p class="codepen" data-height="300" data-slug-hash="QWOaeZR" data-user="sundicide" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
-  <span>See the Pen <a href="https://codepen.io/sundicide/pen/QWOaeZR">
-  CSS-Animation-Hover</a> by sundicide (<a href="https://codepen.io/sundicide">@sundicide</a>)
-  on <a href="https://codepen.io">CodePen</a>.</span>
-</p>
-<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+https://codepen.io/sundicide/pen/QWOaeZR
 
 transition에서 지정할 수 있는 속성들에 대한 자세한 내용은 MDN에서 확인할 수 있다. [출처: MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/transition)
 
@@ -126,12 +104,7 @@ alternate류는 순환을 하기 때문에 normal/reverse 보다 `animation-dura
 <br/>
 예를 들어 4초 동안 앞으로 갔다 뒤로 갔다 순환을 하기 위해 `animation-direction` 값을 `alternate`로 설정했다면 `animation-duration: 2s`로 설정해야 한다는 것이다.(순방향 2초 + 역방향 2초 = 총 4초)
 
-<p class="codepen" data-height="300" data-slug-hash="yLPvBYe" data-user="sundicide" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
-  <span>See the Pen <a href="https://codepen.io/sundicide/pen/yLPvBYe">
-  Untitled</a> by sundicide (<a href="https://codepen.io/sundicide">@sundicide</a>)
-  on <a href="https://codepen.io">CodePen</a>.</span>
-</p>
-<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+https://codepen.io/sundicide/pen/yLPvBYe
 
 
 ### 3-2. Fill Mode
@@ -144,19 +117,19 @@ alternate류는 순환을 하기 때문에 normal/reverse 보다 `animation-dura
 <br/>
 봤을 때 조금씩은 다른거 같은데 어떤 차이가 있는지 설명하기 어려울 수 있다.
 이에 대한 설명을 해보자면
-1. `none`은 `애니메이션 시작 전의 초기상태로 돌려 놓는다.` 라고 할 수 있다.
-  MDN의 예시에서 원이 왼쪽에서 오른쪽으로 움직이는 애니메이션이 동작한다. 시작은 왼쪽, 종료는 오른쪽이기에 animation이 끝난 뒤에는 다시 이 원의 위치를 왼쪽으로 돌려 놓게 되는 것이다.
-2. `forwards`는 `애니메이션의 종료 상태로 계속 유지한다.` 라고 할 수 있다.
-  MDN 예시에서 animation이 끝난뒤에 계속 종료상태(오른쪽으로 이동한 상태)를 유지해 계속해서 오른쪽에 남아 있는 것이다.
-3. `backwards`는 `애니메이션 시작 할 때부터 전의 상태를 유지한다` 라고 할 수 있다.<br/>
-  MDN 예시에서는 차이를 찾기 힘들기 때문에 아래 예시를 첨부한다.<br/>
-  run 버튼을 눌렀을 때 **default 박스**는 애니메이션이 시작될 때에 사라졌다가 다시 나타나지만, **backwards 박스**는 애니메이션이 시작되기 전에(animation-delay 중일 때) 먼저 from 상태가 적용되고 있음을 알 수 있다.
-    <p class="codepen" data-height="350" data-slug-hash="bGYLjVp" data-user="sundicide" style="height: 350px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
-    <span>See the Pen <a href="https://codepen.io/sundicide/pen/bGYLjVp">
-    CSS-Animation-fill_mode</a> by sundicide (<a href="https://codepen.io/sundicide">@sundicide</a>)
-    on <a href="https://codepen.io">CodePen</a>.</span>
-    </p>
-    <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+
+1. `none`은 `애니메이션 시작 전의 초기상태로 돌려 놓는다.` 라고 할 수 있다.<br />
+    MDN의 예시에서 원이 왼쪽에서 오른쪽으로 움직이는 애니메이션이 동작한다. 시작은 왼쪽, 종료는 오른쪽이기에 animation이 끝난 뒤에는 다시 이 원의 위치를 왼쪽으로 돌려 놓게 되는 것이다.
+
+2. `forwards`는 `애니메이션의 종료 상태로 계속 유지한다.` 라고 할 수 있다.<br />
+    MDN 예시에서 animation이 끝난뒤에 계속 종료상태(오른쪽으로 이동한 상태)를 유지해 계속해서 오른쪽에 남아 있는 것이다.
+
+3. `backwards`는 `애니메이션 시작 할 때부터 전의 상태를 유지한다` 라고 할 수 있다. <br />
+    MDN 예시에서는 차이를 찾기 힘들기 때문에 아래 예시를 첨부한다.<br/>
+    run 버튼을 눌렀을 때 **default 박스**는 애니메이션이 시작될 때에 사라졌다가 다시 나타나지만, **backwards 박스**는 애니메이션이 시작되기 전에(animation-delay 중일 때) 먼저 from 상태가 적용되고 있음을 알 수 있다.
+
+    https://codepen.io/sundicide/pen/bGYLjVp
+
 4. `both`는 forwards와 backwards를 둘 다 적용하는 것을 의미한다.
 
 ## 4. Performance
@@ -283,12 +256,7 @@ function getPrefersReducedMotion() {
 
 아래의 예시는 이를 고려한 `help icon`이다. 일반 유저에게는 일반 애니메이션(px의 움직임이 많은 motion)을 보여주고 reduce motion을 체크한 사용자에게는 보다 부담이 덜한 애니메이션을 표현하도록 했다.
 
-<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="wvPjYjQ" data-user="sundicide" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
-  <span>See the Pen <a href="https://codepen.io/sundicide/pen/wvPjYjQ">
-  CSS Animations - accessibiltiy help-icon</a> by sundicide (<a href="https://codepen.io/sundicide">@sundicide</a>)
-  on <a href="https://codepen.io">CodePen</a>.</span>
-</p>
-<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+https://codepen.io/sundicide/pen/wvPjYjQ
 
 
 > Accessibility관점에서 animation은 보수적으로, 너무 많은 애니메이션 보다는 목적과 이유가 있는 애니메이션을 추가하길 권한다.
