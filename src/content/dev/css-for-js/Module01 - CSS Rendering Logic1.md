@@ -1,5 +1,5 @@
 ---
-title: "Module 00 - CSS Fundamentals"
+title: "Module 01 - CSS Rendering Logic 1"
 date: "2022-03-26"
 draft: false
 path: "/blog/study/css-for-js/module-01-css-rendering-logic-1/"
