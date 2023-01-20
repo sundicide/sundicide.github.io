@@ -18,6 +18,11 @@ path: "/blog/bookmarks/"
 
 [MDN - Animating_CSS_properties#css_property_cost](https://developer.mozilla.org/en-US/docs/Tools/Performance/Scenarios/Animating_CSS_properties#css_property_cost)
 
+1. Icons
+    * [https://atlasicons.vectopus.com/](https://atlasicons.vectopus.com/)
+    * [https://healthicons.org/](https://healthicons.org/)
+    * [https://glyphs.fyi/dir](https://glyphs.fyi/dir)
+
 ### Inspirations
 1. [letter spacing game](https://type.method.ac/#)
 
