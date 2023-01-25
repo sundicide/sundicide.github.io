@@ -22,6 +22,7 @@ path: "/blog/bookmarks/"
     * [https://atlasicons.vectopus.com/](https://atlasicons.vectopus.com/)
     * [https://healthicons.org/](https://healthicons.org/)
     * [https://glyphs.fyi/dir](https://glyphs.fyi/dir)
+    * svg exports: [https://svgps.app/](https://svgps.app/) 
 
 ### Inspirations
 1. [letter spacing game](https://type.method.ac/#)
