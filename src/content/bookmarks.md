@@ -5,18 +5,20 @@ draft: false
 path: "/blog/bookmarks/"
 ---
 
+
 ## Lifes
 
 [TED- Tim Urban: Inside the mind of a master procrastinator](https://www.ted.com/talks/tim_urban_inside_the_mind_of_a_master_procrastinator?language=en)
 
 ## Devs
-[GSAP](https://greensock.com/get-started/)
+* [Design system documentation](https://zeroheight.com/)
+* [GSAP](https://greensock.com/get-started/)
 
-[tailwind cheatsheet](https://tailwindcomponents.com/cheatsheet/)
+* [tailwind cheatsheet](https://tailwindcomponents.com/cheatsheet/)
 
-[CSS Triggers(Animation)](https://csstriggers.com/)
+* [CSS Triggers(Animation)](https://csstriggers.com/)
 
-[MDN - Animating_CSS_properties#css_property_cost](https://developer.mozilla.org/en-US/docs/Tools/Performance/Scenarios/Animating_CSS_properties#css_property_cost)
+* [MDN - Animating_CSS_properties#css_property_cost](https://developer.mozilla.org/en-US/docs/Tools/Performance/Scenarios/Animating_CSS_properties#css_property_cost)
 
 1. Icons
     * [https://atlasicons.vectopus.com/](https://atlasicons.vectopus.com/)
