@@ -36,3 +36,43 @@ const xAccessor = d => dateParser(d.date)
 * Bounds: 축을 제외한 차트가 그려지는 내부만 지칭
 
 이를 정의해야 원하는 크기의 차트와 축을 그리기 쉽다.
+
+```javascript
+let dimensions = {
+  width: window.innerWidth * 0.9,
+  height: 400,
+  margin: {
+    top: 15,
+    right: 15,
+    bottom: 40,
+    left: 60,
+  },
+}
+
+const { height, width, margin } = dimensions
+
+dimensions.boundedWidth = width - margin.left - margin.right
+dimensions.boundedHeight = height - margin.top - margin.bottom
+
+### select
+
+const wrapper = d3.select("#wrapper")
+
+### adding svg
+
+Web API의 createElement와 appendChild를 D3는 한 번에 해결할 수 있다.
+const svg = wrapper.append("svg")
+
+`.attr()` 메소드를 이용해 attr을 추가할 수 있다.
+svg.attr("width", dimensions.width)
+svg.attr("height", dimensions.height)
+
+위의 코드를 한 번에 해결할 수도 있다.
+
+const wrapper = d3.select("#wrapper")
+    .append("svg")
+    .attr("width", dimensions.width)
+    .attr("height", dimensions.height)
+
+
+```
