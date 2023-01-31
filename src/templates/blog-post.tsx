@@ -58,6 +58,20 @@ const MarkdownContent = styled.div`
     background: ${(props) => props.theme.colors.tertiaryContainer};
     color: ${(props) => props.theme.colors.onTertiaryContainer};
   }
+  .table-of-contents {
+    background: ${(props) => props.theme.colors.surfaceVariant};
+    color: ${(props) => props.theme.colors.onSurfaceVariant};
+    a {
+      background: transparent;
+    }
+    ol {
+      li {
+        p {
+          margin: 0;
+        }
+      }
+    }
+  }
 `;
 
 const Data = ({ data }: any) => {

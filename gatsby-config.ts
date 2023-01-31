@@ -66,6 +66,17 @@ const config: GatsbyConfig = {
       options: {
         plugins: [
           {
+            resolve: "gatsby-remark-table-of-contents",
+            options: {
+              exclude: "Table of Contents",
+              tight: false,
+              ordered: true,
+              fromHeading: 2,
+              toHeading: 6,
+              className: "table-of-contents",
+            },
+          },
+          {
             resolve: "gatsby-remark-prismjs",
             options: {
               // Class prefix for <pre> tags containing syntax highlighting;
@@ -137,6 +148,7 @@ const config: GatsbyConfig = {
               height: 400,
             },
           },
+          "gatsby-remark-autolink-headers",
         ],
       },
     },
