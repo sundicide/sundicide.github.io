@@ -28,3 +28,11 @@ const yAccessor = d => d.temperatureMax
 const dateParser = d3.timeParse("%Y-%m-%d")
 const xAccessor = d => dateParser(d.date)
 ```
+
+### area
+차트를 그릴 때 Wrapper와 Bounds에 대한 정의가 필요하다. 선택한 단어는 강의에서 편하고자 정의한 것이니 general하지 않을 수 있다. 
+
+* Wrapper: 차트, 축 및 여백을 포함한 모든 영역을 지칭
+* Bounds: 축을 제외한 차트가 그려지는 내부만 지칭
+
+이를 정의해야 원하는 크기의 차트와 축을 그리기 쉽다.
