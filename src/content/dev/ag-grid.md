@@ -125,7 +125,7 @@ columns = [{
 }]
 ```
 
-### defaultColDef
+#### defaultColDef
 위의 columns는 각 컬럼 마다 매번 설정해줘야 했다면 모든 column에 기본으로 적용할 수도 있다.
 
 ```javascript
@@ -143,4 +143,91 @@ const defaultColDef = useMemo(() => {
 ```
 위의 예제에서 **defaultColDef**를 이용해 `filter: true`를 설정했는데 filter를 사용하고 싶지 않은 컬럼이 있다면 columns에서 `filter: false`를 설정하면 된다.
 
+#### sorting
+https://www.ag-grid.com/react-data-grid/row-sorting/
 
+아래와 같이 sortable을 넣으면 sorting 가능하다.
+
+```javascript
+columns = [{
+  ...
+  sortable: true,
+}]
+```
+
+customSorting은 위의 링크에서 확인. <br />
+
+multisort를 하려면 아래의 코드를 넣고 맥에선 CMD 키로 누른 채로 column을 클릭하면 된다.
+
+```javascript
+<AgGridReact
+  ...
+  multiSortKey={'ctrl'}
+>
+```
+
+### ToolPanel
+
+https://www.ag-grid.com/react-data-grid/tool-panel/
+
+유료기능으로 테이블의 오른쪽(기본 값)에 여러 기능 탭(컬럼 관련 탭, 필터 관련 탭 등)을 보여주기 위한 설정이다.
+
+<img src="https://www.ag-grid.com/static/a5b7a9bbf3c7e90ea6917daef8df7f4d/f9f32/sideBar.png">
+
+아래 공식 그림에서 알 수 있듯이 Tool Panel과 Side Bar라는 용어를 쓰니 혼동 주의 <br />
+
+이 기능을 추가하려면 아래와 같이 하면 된다.
+
+```javascript
+<AgGridReact
+  ...
+  sideBar={true}
+>
+```
+
+boolean을 넣으면 기본으로 **Columns**와 **Filters** Tool이 추가되는데, boolean 대신 String[]을 넣으면 원하는 Tool만 넣을 수도 있다.
+
+```javascript
+<AgGridReact
+  ...
+  sideBar={'filters'}
+>
+```
+
+또 기본으로 sideBar는 펼친 상태로 실행되는데 이를 닫힌 상태로 하고 싶다면 아래와 같이 `defaultToolPanel`에 빈 스트링을 넣으면 된다.
+
+```javascript
+const sideBar = useMemo(() => {
+  return {
+    toolPanels: [
+      "columns",
+      {
+        id: "data_filters",
+        labelKey: "data-filters",
+        labelDefault: "Data Filters",
+        iconKey: "menu",
+        toolPanel: "agFiltersToolPanel",
+      },
+      {
+        id: "filters",
+        labelKey: "filters",
+        labelDefault: "Filters XXXXXXXX",
+        iconKey: "filter",
+        toolPanel: CustomToolPanel,
+      },
+    ],
+    defaultToolPanel: "",
+  };
+}, []);
+
+...
+
+<AgGridReact
+  ...
+  sideBar={sideBar}
+>
+```
+
+또한 위에 처럼 sideBar를 직접 정의하게 되면 Custom Tool Panel을 넣을 수 있다.
+
+https://www.ag-grid.com/react-data-grid/component-tool-panel/
