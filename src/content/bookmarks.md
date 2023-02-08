@@ -26,6 +26,9 @@ path: "/blog/bookmarks/"
     * [https://glyphs.fyi/dir](https://glyphs.fyi/dir)
     * svg exports: [https://svgps.app/](https://svgps.app/) 
 
+2. Desing Insights
+    * [https://www.epic.net/](https://www.epic.net/)
+
 ### Inspirations
 1. [letter spacing game](https://type.method.ac/#)
 
