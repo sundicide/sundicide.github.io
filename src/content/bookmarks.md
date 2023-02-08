@@ -13,6 +13,7 @@ path: "/blog/bookmarks/"
 ## Devs
 * [Design system documentation](https://zeroheight.com/)
 * [GSAP](https://greensock.com/get-started/)
+    * [GSAP 예시 모음 CSS-Tricks](https://css-tricks.com/tips-for-writing-animation-code-efficiently/)
 
 * [tailwind cheatsheet](https://tailwindcomponents.com/cheatsheet/)
 
