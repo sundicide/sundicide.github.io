@@ -20,12 +20,13 @@ path: "/blog/bookmarks/"
 * [CSS Triggers(Animation)](https://csstriggers.com/)
 
 * [MDN - Animating_CSS_properties#css_property_cost](https://developer.mozilla.org/en-US/docs/Tools/Performance/Scenarios/Animating_CSS_properties#css_property_cost)
+* [Next.js + mdx site generator](https://nextra.site/)
 
 1. Icons
     * [https://atlasicons.vectopus.com/](https://atlasicons.vectopus.com/)
     * [https://healthicons.org/](https://healthicons.org/)
     * [https://glyphs.fyi/dir](https://glyphs.fyi/dir)
-    * svg exports: [https://svgps.app/](https://svgps.app/) 
+    * svg exports: [https://svgps.app/](https://svgps.app/)
 
 2. Desing Insights
     * [https://www.epic.net/](https://www.epic.net/)
